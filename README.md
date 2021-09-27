@@ -21,7 +21,7 @@ In this tutorial, you will be doing the following steps:
 4. Add a python script to the `favorite-animals/` folders
 5. Commit your changes
 6. Push your local feature branch to your remote repo (your fork)
-7. Open a Pull Request to the Starting Repository (stephengodderidge/learn-git)
+7. Open a Pull Request to the Starting Repository (jasonstewartpariveda/learn-git)
 
 For bonus steps, you can do the following:
 7. Pull in the latest changes from this repo (not your fork) into your local repo
@@ -31,15 +31,15 @@ For bonus steps, you can do the following:
 ## Step 1: Fork This Repository
 Instead of adding your changes directly to someone else's repo, you can create a copy of their repository to work with. When you create this copy, we call it "forking the repository."
 
-Conceptually, think about hitting a fork in the road -- the road splits into two. This is the same with forking in git. Forking simply creates a snapshot of the base repository (`stephengodderidge/learn-git`) that you can make changes to. Once you make changes, you can open a pull request (PR) from a feature branch on your fork to the base repo's master. More on this later.
+Conceptually, think about hitting a fork in the road -- the road splits into two. This is the same with forking in git. Forking simply creates a snapshot of the base repository (`jasonstewartpariveda/learn-git`) that you can make changes to. Once you make changes, you can open a pull request (PR) from a feature branch on your fork to the base repo's master. More on this later.
 
 After you fork your repo, your newly-created repo will be referred to as a "fork." This might sound weird, but just go with it. I promise it will stick eventually.
 
-1. Make sure you're on the base page of the `learn-git` repository: [https://github.comstephengodderidge/learn-git](https://github.com/stephengodderidge/learn-git).
+1. Make sure you're on the base page of the `learn-git` repository: [https://github.com/jasonstewartpariveda/learn-git](https://github.com/jasonstewartpariveda/learn-git).
 2. In the top right-hand corner, you'll see a button that says "Fork". Click it.
     You'll see a screen that shows "Forking repository". You'll now find yourself on a new repo page. If you look in the top left, you'll see that this repo is based on your `<your-github-username/learn-git>`.
 
-Congrats! You've created a fork! This is simply a copy of the base repository `stephengodderidge/learn-git`
+Congrats! You've created a fork! This is simply a copy of the base repository `jasonstewartpariveda/learn-git`
 
 ## Step 2: Clone Your Newly-Created Fork
 You'll need to clone your fork repository to you local environment. "Clone" might just sound like a fancy way to say "download", but cloning keeps the connection between the remote repository (in GitHub) so you can add our changes (commits) back to the remote. By the end of this step, your will have cloned the repository into a folder on your computer.
@@ -54,10 +54,10 @@ You'll need to clone your fork repository to you local environment. "Clone" migh
 And Voila! You've officially cloned the repository onto your local machine. Navigate to your repository by running a quick `cd learn-git`
 
 ### Step 2.5: Adding a "Remote" back to the original repository
-One of the trickiest parts of Git is updating your local branch with the changes in the remote repository (`stephengodderidge/learn-git` in our case). In order to do this, we'll need to add a "remote" reference to our local git branch.
+One of the trickiest parts of Git is updating your local branch with the changes in the remote repository (`jasonstewartpariveda/learn-git` in our case). In order to do this, we'll need to add a "remote" reference to our local git branch.
 
 1. Run `git remote -v` to see all of your current remotes. You should see one: `origin` and that should reference your forked remote repo. Don't worry about the difference between `(fetch)` and `(push)` for now.
-2. Next, add a remote called `upstream` with the URL of the original repository by running `git remote add upstream https://github.com/stephengodderidge/learn-git.git`.
+2. Next, add a remote called `upstream` with the URL of the original repository by running `git remote add upstream https://github.com/jasonstewartpariveda/learn-git.git`.
 3. Run `git remote -v` to see that new remote added
 
 Congrats! You added your new remote! Now, when updates are added to that repository, we'll be able to _pull_ those changes to your local repository. We'll practice this after we open our pull request in the Bonus section of this tutorial.
@@ -99,7 +99,7 @@ Think of committing your staged changes as saving your changes to your repositor
 
 1. Make sure you saved your new script.
 
-2. Run `git status` to see the files that have been changed. You should see a `Changes not staged for commit:` section. Underneath, you should see the file path to your new script (example: `favorite-animals/stephen_godderidge.py`). These are changes that you have saved to your files, but they aren't currently setup to be committed yet. _Your changes aren't staged yet_. In fact, you'll need _add_ them to the staged files before you can commit them.
+2. Run `git status` to see the files that have been changed. You should see a `Changes not staged for commit:` section. Underneath, you should see the file path to your new script (example: `favorite-animals/jason-stewart.py`). These are changes that you have saved to your files, but they aren't currently setup to be committed yet. _Your changes aren't staged yet_. In fact, you'll need _add_ them to the staged files before you can commit them.
 
 3. Run `git add favorite-animals/<insert_your_script_name>.py`. This step adds the file to the files staged for the commit.
 
@@ -145,7 +145,7 @@ Copy this URL. You're going to need it in a minute!
 
 4. Bonus -- go to your fork in your browser. In the top left corner, you should see a button that says `Master`. Click it, and see that your branch is there. You can open you branch and navigate to your script. You should be able to see your changes. Pretty cool right?
 
-## Step 7: Open a Pull Request to the Starting Repository (stephengodderidge/learn-git)
+## Step 7: Open a Pull Request to the Starting Repository (jasonstewartpariveda/learn-git)
 Our next goal is to add our commits to the master branch of the real `learn-git` repo so others can see our script and make changes if they'd like. In order to do this, you need to submit a request to pull those changes into the repo. In other words, you need to open a __pull request__.
 
 This Pull Request needs to be approved by the owners of the repository before it can be _merged_ into master. Different companies have different approval processes (example: multiple reviewers from different teams), but our use case is simple. You're simply focused on opening the pull request.
@@ -156,7 +156,7 @@ This Pull Request needs to be approved by the owners of the repository before it
 
 Congrats! You've opened your first pull request!! Go ahead and take a look around at the different tabs. See if you can find where you can view your changes (Hint: look for files). You can also view your commit(s).
 
-Because you don't own the upstream repo (`stephengodderidge/learn-git`), you won't be able to approve your own PR. I'll keep an eye on this repo, and once I see your PR, I'll approve it and merge it into master.
+Because you don't own the upstream repo (`jasonstewartpariveda/learn-git`), you won't be able to approve your own PR. I'll keep an eye on this repo, and once I see your PR, I'll approve it and merge it into master.
 
 Note that if I wanted to, I could add collaborators that contribute directly to this repository by by going to Settings -> Manage Access -> Invite a Collaborators. This would be particularly useful for group projects.
 
